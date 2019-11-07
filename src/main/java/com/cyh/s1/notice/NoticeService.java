@@ -11,12 +11,11 @@ public class NoticeService {
 
 	private NoticeDAO noticeDAO;
 
-	public NoticeService() {
-		noticeDAO = new NoticeDAO();
+	
+
+	public void setNoticeDAO(NoticeDAO noticeDAO) {
+		this.noticeDAO = noticeDAO;
 	}
-
-
-
 
 	public List<NoticeDTO>noticeList()throws Exception{
 

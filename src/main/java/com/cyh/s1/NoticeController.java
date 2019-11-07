@@ -2,6 +2,7 @@ package com.cyh.s1;
 
 import java.util.List;
 
+import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -22,12 +23,9 @@ public class NoticeController {
 	//  /notice/sub/noticeUpdate	
 	//write POST방식일때
 	
+	
+	@Inject
 	private NoticeService noticeService;
-	
-	public NoticeController() {
-		noticeService = new NoticeService();
-	}
-	
 	
 	
 	
