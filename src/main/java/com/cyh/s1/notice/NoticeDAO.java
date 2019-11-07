@@ -1,13 +1,19 @@
 package com.cyh.s1.notice;
 
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Repository;
+
 import com.cyh.util.DBConnector;
 
+@Repository
+@Qualifier("n1")
 public class NoticeDAO {
 
 		public List<NoticeDTO>noticeList()throws Exception{
