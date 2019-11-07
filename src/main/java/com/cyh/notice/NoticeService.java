@@ -1,19 +1,20 @@
-package com.cyh.s1.notice;
+package com.cyh.notice;
 
 import java.sql.Connection;
 import java.util.List;
 
+import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 
-import com.cyh.util.DBConnector;
+import org.springframework.stereotype.Service;
 
+
+
+@Service
 public class NoticeService {
 
+	@Inject
 	private NoticeDAO noticeDAO;
-
-	public NoticeService() {
-		noticeDAO = new NoticeDAO();
-	}
 
 
 

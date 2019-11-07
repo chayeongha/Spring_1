@@ -2,6 +2,7 @@ package com.cyh.s1;
 
 import java.util.List;
 
+import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -13,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.cyh.s1.notice.NoticeDTO;
-import com.cyh.s1.notice.NoticeService;
+import com.cyh.notice.NoticeDTO;
+import com.cyh.notice.NoticeService;
 
 @Controller
 @RequestMapping("/notice/**")
@@ -22,11 +23,9 @@ public class NoticeController {
 	//  /notice/sub/noticeUpdate	
 	//write POST방식일때
 	
+	@Inject
 	private NoticeService noticeService;
 	
-	public NoticeController() {
-		noticeService = new NoticeService();
-	}
 	
 	
 	

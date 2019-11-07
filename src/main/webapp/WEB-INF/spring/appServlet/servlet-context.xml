@@ -21,8 +21,11 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.cyh.s1" />
 	
+	<context:component-scan base-package="com.cyh.s1" />
+	<!-- com.cyh.s1이란 패키지에서 annotation선언을 읽어봐라. -->
+	<!-- 경로를 잘보고  경로밖이면 작동이안됨. annotation선언이-->
+	<context:component-scan base-package="com.cyh.notice" />
 	
 	
 </beans:beans>

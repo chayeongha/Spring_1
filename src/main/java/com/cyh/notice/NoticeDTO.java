@@ -1,4 +1,4 @@
-package com.cyh.s1.notice;
+package com.cyh.notice;
 
 import java.sql.Date;
 
