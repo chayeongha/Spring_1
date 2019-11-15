@@ -18,12 +18,12 @@
 </thead>
 <tbody>
 <tr>
-<td>${requestScope.dto.num}</td>
-<td>${requestScope.dto.title} </td>
-<td>${requestScope.dto.writer}</td>
-<td>${requestScope.dto.contents}</td>
-<td>${requestScope.dto.reg_date}</td>
-<td>${requestScope.dto.hit}</td>
+<td>${dto.num}</td>
+<td>${dto.title} </td>
+<td>${dto.writer}</td>
+<td>${dto.contents}</td>
+<td>${dto.reg_date}</td>
+<td>${dto.hit}</td>
 
 </tr>
 </tbody>
@@ -33,8 +33,8 @@
 
 <div class="button">
 
-<a class="btn btn-danger" href="">Update</a>
-<a href="" class="btn btn-primary">Delete</a>
+<a class="btn btn-danger" href="./notice/noticeUpdate?num=${dto.num}">Update</a>
+<a href="./notice/noticeDelete?num=${dto.num}" class="btn btn-primary">Delete</a>
 
 </div>
 	

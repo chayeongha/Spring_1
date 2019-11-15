@@ -32,14 +32,14 @@
 			<tbody>
 
 
-				<c:forEach items="${requestScope.list}" var="dto" varStatus="st">
+				<c:forEach items="${list}" var="dto" varStatus="st">
 
 					<tr class="warning">
-						<td>${pageScope.dto.num}</td>
-						<td><a href="./noticeSelect.notice?num=${pageScope.dto.num}">${pageScope.dto.title}</a></td>
-						<td>${pageScope.dto.writer}</td>
-						<td>${pageScope.dto.reg_date}</td>
-						<td>${pageScope.dto.hit}</td>
+						<td>${dto.num}</td>
+						<td><a href="./noticeSelect.notice?num=${dto.num}">${dto.title}</a></td>
+						<td>${dto.writer}</td>
+						<td>${dto.reg_date}</td>
+						<td>${dto.hit}</td>
 						
 					</tr>
 
